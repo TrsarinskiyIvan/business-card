@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/header.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUSINESS-CARD</title>
 </head>
+
 <body>
-    <p>Hello world</p>
+    <div class="page">
+        <header>
+            <div class="home-link"><a href="#">HOME</a></div>
+            <div onclick="showMenu()" class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+            <nav id="dropMenu" class="drop-menu">
+                <div class="bar-menu">
+                    <div class="home-link"><a href="#">HOME</a></div>
+                    <div onclick="hideMenu()" class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <ul class="link-tabs">
+                    <li class="tab-1">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <div>PROJECTS</div>
+                    <li class="tab-2">
+                        <i class="fa-solid fa-user"></i>
+                        <div>PROFILE</div>
+                    </li>
+                    <li class="tab-3">
+                        <i class="fa-solid fa-kitchen-set"></i>
+                        <div>SKILLS</div>
+                    </li>
+                    <li class="tab-4">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <div>ABOUT</div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <script src="https://kit.fontawesome.com/8fec58a0aa.js" crossorigin="anonymous"></script>
+    <script src="./scripts/drop-menu.js"></script>
 </body>
+
 </html>

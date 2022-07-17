@@ -1,0 +1,108 @@
+header {
+    position: relative;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    position: absolute;
+    background-color: rgb(204, 102, 102);
+    top: -1000px;
+    left: 0;
+    right: 0;
+    transition: top .3s;
+}
+
+.nav-show {
+    top: -35px;
+}
+
+.bar-menu {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(147, 96, 96);
+    align-items: center;
+}
+
+.bar-menu .home-link a {
+    color: rgb(255, 255, 255);
+}
+
+.home-link {
+    flex-grow: 1;
+    padding: 20px 0;
+}
+
+.close-btn {
+    border-left: 2px solid rgb(147, 96, 96);
+    padding: 20px 25px;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+.link-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    font-size: 50px;
+}
+
+.link-tabs li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.link-tabs li div {
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.close-btn:hover,
+nav .home-link:hover,
+.link-tabs li:hover {
+    background-color: rgb(213, 131, 131);
+    cursor: pointer;
+}
+
+.tab-1,
+.tab-2,
+.tab-3,
+.tab-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-1 {
+    border-right: 2px solid rgb(147, 96, 96);
+    border-bottom: 2px solid rgb(147, 96, 96);
+}
+
+.tab-4 {
+    border-left: 2px solid rgb(147, 96, 96);
+    border-top: 2px solid rgb(147, 96, 96);
+}
+
+/* ----------------------------------------------------- */
+.home-link a {
+    font-size: 25px;
+    color: rgb(70, 70, 70);
+    font-weight: 900;
+    padding-left: 20px;
+}
+
+.menu-btn {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 35px;
+    padding: 15px 20px;
+}
+
+.menu-btn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}

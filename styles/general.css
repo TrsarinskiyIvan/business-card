@@ -1,0 +1,14 @@
+li,
+div {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    letter-spacing: 5px;
+}
+
+body {
+    background-color: rgb(249, 244, 237);
+}
+
+.page {
+    width: 800px;
+    margin: 0 auto;
+}
