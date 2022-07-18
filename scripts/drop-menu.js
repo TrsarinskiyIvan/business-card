@@ -1,10 +1,10 @@
 
-function showMenu() {
+function showDropMenu() {
     let dropMenu = document.getElementById('dropMenu');
-    dropMenu.classList.add('nav-show');
+    dropMenu.classList.add('drop-menu_show');
 }
 
-function hideMenu() {
+function hideDropMenu() {
     let dropMenu = document.getElementById('dropMenu');
-    dropMenu.classList.remove('nav-show');
+    dropMenu.classList.remove('drop-menu_show');
 }

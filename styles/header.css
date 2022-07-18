@@ -6,16 +6,15 @@ header {
     align-items: center;
 }
 
-nav {
+.drop-menu {
     position: absolute;
-    background-color: rgb(204, 102, 102);
     top: -1000px;
     left: 0;
     right: 0;
     transition: top .3s;
 }
 
-.nav-show {
+.drop-menu_show {
     top: -35px;
 }
 
@@ -23,72 +22,74 @@ nav {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid rgb(147, 96, 96);
+    background-color: rgb(204, 102, 102);
     align-items: center;
 }
 
-.bar-menu .home-link a {
+.bar-menu__home-link {
     color: rgb(255, 255, 255);
-}
-
-.home-link {
+    font-size: 30px;
+    padding: 20px 25px;
     flex-grow: 1;
-    padding: 20px 0;
 }
 
-.close-btn {
+.bar-menu_close-btn {
     border-left: 2px solid rgb(147, 96, 96);
     padding: 20px 25px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 900;
     color: rgb(255, 255, 255);
+}
+
+.link-tabs-container {
+    background-color: rgb(147, 96, 96);
 }
 
 .link-tabs {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: white;
+    column-gap: 2px;
+    row-gap: 2px;
+    color: rgb(255, 255, 255);
     font-size: 50px;
 }
 
 .link-tabs li {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
+    width: 399px;
+    height: 399px;
+    background-color: rgb(204, 102, 102);
 }
 
-.link-tabs li div {
+.link-tabs li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    width: 399px;
+    height: 399px;
     font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.link-tabs li a span {
     margin-top: 25px;
 }
 
-.close-btn:hover,
+.link-tabs li a i {
+    font-size: 40px;
+}
+
+.bar-menu_close-btn:hover,
 nav .home-link:hover,
+.bar-menu__home-link:hover,
 .link-tabs li:hover {
     background-color: rgb(213, 131, 131);
     cursor: pointer;
 }
 
-.tab-1,
-.tab-2,
-.tab-3,
-.tab-4 {
-    display: flex;
-    flex-direction: column;
-}
-
-.tab-1 {
-    border-right: 2px solid rgb(147, 96, 96);
-    border-bottom: 2px solid rgb(147, 96, 96);
-}
-
-.tab-4 {
-    border-left: 2px solid rgb(147, 96, 96);
-    border-top: 2px solid rgb(147, 96, 96);
-}
-
 /* ----------------------------------------------------- */
-.home-link a {
+.home-link {
     font-size: 25px;
     color: rgb(70, 70, 70);
     font-weight: 900;
