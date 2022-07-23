@@ -1,0 +1,26 @@
+.social {
+    position: fixed;
+    bottom: 0;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    background-color: #f9f4ed
+}
+
+.social__github {
+    margin: 0 30px;
+}
+
+.social__insatgram,
+.social__github,
+.social__500px {
+    font-size: 50px;
+    color: rgb(70, 70, 70);
+}
+
+.social__insatgram:hover,
+.social__github:hover,
+.social__500px:hover {
+    color: rgb(204, 102, 102);
+}

@@ -5,10 +5,11 @@ div {
 }
 
 body {
-    background-color: rgb(249, 244, 237);
+    background-color: #f9f4ed;
 }
 
 .page {
     width: 800px;
     margin: 0 auto;
+    padding-bottom: 75px;
 }

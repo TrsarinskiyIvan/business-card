@@ -4,6 +4,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .drop-menu {
@@ -21,28 +22,29 @@ header {
 .bar-menu {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid rgb(147, 96, 96);
-    background-color: rgb(204, 102, 102);
+    border-bottom: 2px solid #936060;
+    background-color: #cc6666;
     align-items: center;
 }
 
 .bar-menu__home-link {
-    color: rgb(255, 255, 255);
+    font-family: Arial;
+    color: #ffffff;
     font-size: 30px;
     padding: 20px 25px;
     flex-grow: 1;
 }
 
 .bar-menu_close-btn {
-    border-left: 2px solid rgb(147, 96, 96);
+    border-left: 2px solid #936060;
     padding: 20px 25px;
     font-size: 30px;
     font-weight: 900;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 
 .link-tabs-container {
-    background-color: rgb(147, 96, 96);
+    background-color: #936060;
 }
 
 .link-tabs {
@@ -50,7 +52,7 @@ header {
     grid-template-columns: 1fr 1fr;
     column-gap: 2px;
     row-gap: 2px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-size: 50px;
 }
 
@@ -58,7 +60,7 @@ header {
     display: flex;
     width: 399px;
     height: 399px;
-    background-color: rgb(204, 102, 102);
+    background-color: #cc6666;
 }
 
 .link-tabs li a {
@@ -69,7 +71,7 @@ header {
     width: 399px;
     height: 399px;
     font-size: 30px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 
 .link-tabs li a span {
@@ -84,26 +86,27 @@ header {
 nav .home-link:hover,
 .bar-menu__home-link:hover,
 .link-tabs li:hover {
-    background-color: rgb(213, 131, 131);
+    background-color: #d58383;
     cursor: pointer;
 }
 
 /* ----------------------------------------------------- */
 .home-link {
-    font-size: 25px;
-    color: rgb(70, 70, 70);
+    font-family: Arial;
+    font-size: 30px;
+    color: #464646;
     font-weight: 900;
     padding-left: 20px;
 }
 
 .menu-btn {
     border: none;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #00000000;
     font-size: 35px;
     padding: 15px 20px;
 }
 
 .menu-btn:hover {
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 }

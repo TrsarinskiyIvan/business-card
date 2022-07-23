@@ -1,0 +1,53 @@
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.projects-section__list {
+    margin: 20px 0 40px 0;
+}
+
+.project-section__project {
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.projects-section__description {
+    margin: 40px 0;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+.projects-section__list__item {
+    border-top: 1px solid #464646;
+}
+
+.projects-section__list__item:last-child {
+    border-bottom: 1px solid #464646;
+}
+
+.projects-section__list__item a {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    padding: 30px 0;
+}
+
+.projects-section__list__item a:hover {
+    color: #cc6666;
+    background-color: #fff;
+}
+
+.projects-section__list__item__title {
+    font-size: 35px;
+    font-weight: 900;
+    font-family: Arial;
+    margin: 0 0 20px 20px;
+}
+
+.projects-section__list__item__date {
+    font-size: 20px;
+    margin-left: 20px;
+}
